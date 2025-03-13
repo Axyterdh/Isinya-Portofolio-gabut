@@ -1,0 +1,6 @@
+portfolio/
+│
+├── index.html      (File utama HTML)
+│── styles.css  (File untuk CSS)
+│── scripts.js  (File JavaScript untuk interaktivitas)
+└── images/         (Folder untuk gambar dan ikon)

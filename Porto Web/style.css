@@ -1,0 +1,113 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a202c; /* Warna latar belakang gelap */
+    color: white;
+}
+
+header {
+    background-color: #2d3748;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #38b2ac; /* Warna hijau kebiruan */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #38b2ac;
+    font-weight: bold;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about, #experience, #work, #contact {
+    background-color: #2d3748;
+}
+
+.social-icons a {
+    margin: 10px;
+    text-decoration: none;
+    color: #38b2ac;
+    font-size: 1.2em;
+}
+
+.social-icons a:hover {
+    color: #ff6347; /* Warna saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+#home h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #38b2ac;
+    font-weight: bold;
+}
